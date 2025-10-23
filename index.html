@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El Puesto | Restaurante en Puerto Varas — Próximamente</title>
+  <meta name="description" content="El Puesto, un nuevo restaurante en Puerto Varas inspirado en la cocina a las brasas del sur de Chile. Próximamente. Contáctanos para más información." />
+  <link rel="canonical" href="https://elpuestorestaurant.cl/" />
+  <meta name="theme-color" content="#0f1e2a" />
+
+  <!-- Robots: indexable while we build -->
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:site_name" content="El Puesto" />
+  <meta property="og:title" content="El Puesto | Restaurante en Puerto Varas — Próximamente" />
+  <meta property="og:description" content="Cocina a las brasas en Puerto Varas. Próximamente." />
+  <meta property="og:url" content="https://elpuestorestaurant.cl/" />
+  <meta property="og:image" content="https://elpuestorestaurant.cl/assets/hero.jpg" />
+  <meta property="og:image:alt" content="Brasas encendidas en parrilla, imagen representativa del restaurante El Puesto en Puerto Varas." />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="El Puesto | Restaurante en Puerto Varas — Próximamente" />
+  <meta name="twitter:description" content="Cocina a las brasas en Puerto Varas. Próximamente." />
+  <meta name="twitter:image" content="https://elpuestorestaurant.cl/assets/hero.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f1e2a; /* deep blue */
+      --ink:#0b1419;
+      --muted:#5f6b73;
+      --brand:#c8a66a; /* soft gold */
+      --paper:#ffffff;
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; color:#e9eef2; background:var(--bg);
+      font:16px/1.5 Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial, sans-serif;
+    }
+    .hero{
+      position:relative; min-height:100svh; display:grid; place-items:center; text-align:center; overflow:hidden;
+    }
+    .hero::before{
+      content:""; position:absolute; inset:0; z-index:-2;
+      background:url('assets/hero.webp') center/cover no-repeat;
+      filter:saturate(1.05) contrast(1.05);
+      transform:scale(1.02);
+    }
+    .hero::after{
+      content:""; position:absolute; inset:0; z-index:-1;
+      background:radial-gradient(60% 60% at 50% 60%, rgba(0,0,0,.35), rgba(0,0,0,.65)),
+                 linear-gradient(to top, rgba(15,30,42,.85), rgba(15,30,42,.35));
+      backdrop-filter: blur(.5px);
+    }
+    .wrap{padding:clamp(1rem,2.5vw,2rem); max-width:1100px; width:100%; margin-inline:auto;}
+    .badge{display:inline-flex; align-items:center; gap:.5rem; padding:.5rem .8rem; border:1px solid rgba(255,255,255,.18); border-radius:9999px; background:rgba(0,0,0,.25); font-size:.9rem; letter-spacing:.3px}
+    .logo{font-family:"Playfair Display", serif; font-weight:600; font-size:clamp(2.2rem, 4.5vw, 3.6rem); margin:.6rem 0 0}
+    .tag{font-size:clamp(1.05rem,1.6vw,1.25rem); color:#d9e1e7; max-width:42ch; margin:.8rem auto 1.6rem}
+    .accent{color:var(--brand)}
+
+    .cta{display:flex; flex-wrap:wrap; justify-content:center; gap:.75rem; margin-top:1.2rem}
+    .btn{appearance:none; border:none; cursor:pointer; border-radius:9999px; padding:.9rem 1.2rem; font-weight:600; letter-spacing:.2px}
+    .btn.primary{background:var(--brand); color:#1c2329}
+    .btn.ghost{background:transparent; color:#f2f6fa; border:1px solid rgba(255,255,255,.25)}
+    .btn:hover{transform:translateY(-1px)}
+
+    .contact{display:grid; gap:.4rem; justify-items:center; margin-top:2rem; font-size:.95rem; color:#cfd8de}
+    .contact a{color:#fff; text-decoration:none}
+    .contact a:hover{text-decoration:underline}
+
+    .social{display:flex; gap:.75rem; margin-top:.75rem}
+    .social a{display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:9999px; border:1px solid rgba(255,255,255,.22); text-decoration:none}
+
+    footer{position:absolute; left:0; right:0; bottom:0; padding:1rem; font-size:.85rem; color:#9fb0ba; text-align:center}
+
+    /* Accessibility */
+    .skip{position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden}
+    .skip:focus{position:static; width:auto; height:auto; background:#000; color:#fff; padding:.5rem}
+
+    .logo-img {
+        width: 120px;
+        margin: 1.2rem auto 0.5rem;
+        display: block;
+        opacity: 0.9;
+        filter: drop-shadow(0 2px 6px rgba(0,0,0,0.45));
+        transition: opacity .3s ease;
+        }
+        .logo-img:hover {
+        opacity: 1;
+        }
+        @media (min-width: 768px) {
+        .logo-img {
+            width: 150px;
+        }
+        }
+  </style>
+
+  <!-- JSON-LD (basic Restaurant schema) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "El Puesto",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Puerto Varas",
+      "addressRegion": "Los Lagos",
+      "addressCountry": "CL"
+    },
+    "telephone": "+56 9 9876 5432",
+    "email": "contacto@elpuestorestaurant.cl",
+    "url": "https://elpuestorestaurant.cl/",
+    "sameAs": [
+      "https://www.instagram.com/elpuesto.pv"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <main id="main" class="hero" aria-label="El Puesto — Próximamente en Puerto Varas">
+    <div class="wrap" role="region" aria-labelledby="title">
+      <div class="badge" aria-label="Etiqueta de estado">Próximamente en <span class="accent">Puerto Varas</span></div>
+
+    <img src="assets/logo.png" alt="Logo El Puesto" class="logo-img" />
+      <h1 id="title" class="logo" aria-label="El Puesto">El Puesto</h1>
+      <p class="tag">Fuego, sabor y encuentro en el sur de Chile.</p>
+
+      <div class="cta" role="group" aria-label="Acciones de contacto">
+        <a class="btn primary" href="mailto:contacto@elpuestorestaurant.cl?subject=Consulta%20El%20Puesto">Escríbenos</a>
+        <a class="btn ghost" href="https://wa.me/56998765432" rel="noopener" target="_blank">WhatsApp</a>
+      </div>
+
+      <div class="contact">
+        <div>Correo: <a href="mailto:contacto@elpuestorestaurant.cl">contacto@elpuestorestaurant.cl</a></div>
+        <div>Teléfono: <a href="tel:+56998765432">+56 9 9876 5432</a></div>
+        <div class="social" aria-label="Redes sociales">
+          <a href="https://www.instagram.com/elpuestopv" target="_blank" rel="noopener" aria-label="Instagram">
+            <!-- simple IG glyph -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.4.3 1.1.4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-1 1.5-.5.5-.9.8-1.5 1-.4.2-1.1.3-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.5-1-.5-.5-.8-.9-1-1.5-.2-.4-.3-1.1-.4-2.3C2 15.6 2 15.2 2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.3.2-.6.5-1 1-1.5.5-.5.9-.8 1.5-1 .4-.2 1.1-.3 2.3-.4C8.4 2 8.8 2 12 2zm0 2.2c-3.1 0-3.5 0-4.7.1-1 .1-1.6.2-1.9.4-.5.2-.8.5-1.1.8-.3.3-.6.6-.8 1.1-.2.3-.3.9-.4 1.9-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1 .2 1.6.4 1.9.2.5.5.8.8 1.1.3.3.6.6 1.1.8.3.2.9.3 1.9.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1-.1 1.6-.2 1.9-.4.5-.2.8-.5 1.1-.8.3-.3.6-.6.8-1.1.2-.3.3-.9.4-1.9.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1-.2-1.6-.4-1.9-.2-.5-.5-.8-.8-1.1-.3-.3-.6-.6-1.1-.8-.3-.2-.9-.3-1.9-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.4a6.4 6.4 0 110 12.8 6.4 6.4 0 010-12.8zm0 2.2a4.2 4.2 0 100 8.4 4.2 4.2 0 000-8.4zm6.7-2.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 10-11.6 9.9v-7h-2.3V12h2.3V9.7c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .2 2 .2v2.2H14c-1.1 0-1.5.7-1.5 1.4V12h2.6l-.4 2.9h-2.2v7A10 10 0 0022 12z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      © <span id="year"></span> El Puesto Restaurant — Puerto Varas
+    </footer>
+  </main>
+
+  <script>
+    // current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
