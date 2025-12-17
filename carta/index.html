@@ -31,25 +31,22 @@
   <meta name="twitter:image" content="https://elpuestorestaurant.cl/assets/images/el-puesto-fuego-parrilla-patagonia.jpg">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/assets/css/mystyles.css?v=4">
+  <link rel="stylesheet" href="/assets/css/mystyles.css?v=5">
 
     <!-- JSON-LD WebPage -->
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "@id": "https://elpuestorestaurant.cl/carta/#webpage"
-          "name": "Carta de carnes y parrilla",
-          "url": "https://elpuestorestaurant.cl/carta/",
-          "description": "Carta de El Puesto Restaurant, restaurante de parrilla en Puerto Varas: cortes de carne a la parrilla, cordero patagónico, entradas, acompañamientos y postres frente al Lago Llanquihue.",
-          "inLanguage": "es-CL",
-          "isPartOf": {
-            "@type": "Website",
-            "name": "El Puesto Restaurant",
-            "url": "https://elpuestorestaurant.cl/"
-          }
-        }
-        </script>
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://elpuestorestaurant.cl/carta/#webpage",
+        "name": "Carta",
+        "url": "https://elpuestorestaurant.cl/carta/",
+        "description": "Carta de El Puesto Restaurant, restaurante de parrilla en Puerto Varas: cortes de carne a la parrilla, cordero patagónico, entradas, acompañamientos y postres frente al Lago Llanquihue.",
+        "inLanguage": "es-CL",
+        "isPartOf": { "@id": "https://elpuestorestaurant.cl/#website" },
+        "about": { "@id": "https://elpuestorestaurant.cl/#restaurant" }
+      }
+      </script>
       
         <!-- JSON-LD Breadcrumb -->
         <script type="application/ld+json">
@@ -282,7 +279,13 @@
       </a>
     </div>
 
-    <p class="footer-copy">© <span id="y"></span> El Puesto Restaurant</p>
+    <p class="footer-copy">
+      © <span id="y"></span> El Puesto Restaurant<br>
+      <span class="footer-dev">
+        Sitio web desarrollado por
+        <a href="https://hogga.cl" target="_blank" rel="noopener">Hogga</a>
+      </span>
+    </p>
   </footer>
 
   <script src="/assets/js/mymain.js?v=3"></script>

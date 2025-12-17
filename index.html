@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>El Puesto Restaurant | Parrilla & Asador Patagónico en Puerto Varas</title>
-  <meta name="description" content="Restaurante de parrilla en Puerto Varas, ideal para quienes buscan dónde comer bien frente al Lago Llanquihue. Cortes premium a la parrilla, asador patagónico (para cordero y costillas ventana) y vinos de alta gama de distintas regiones de Chile. Av. Vicente Pérez Rosales 1137. Reservas: +56 65 285 6428.">
+  <title>El Puesto Restaurant | Restaurante de carne a la parrilla y asador patagónico en Puerto Varas</title>
+  <meta name="description" content="Restaurante de parrilla en Puerto Varas, ideal para quienes buscan dónde comer bien frente al Lago Llanquihue. Cortes premium a la parrilla, asador patagónico para cordero y costillas ventana, y vinos de alta gama de distintas regiones de Chile. Estamos en la costanera en Av. Vicente Pérez Rosales 1137. Reservas: +56 65 285 6428.">
 
   <link rel="canonical" href="https://elpuestorestaurant.cl/" />
 
@@ -19,29 +19,45 @@
   <!-- Open Graph / Twitter -->
   <meta property="og:locale" content="es_CL">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="El Puesto Restaurant | Parrilla & Cordero Patagónico en Puerto Varas">
-  <meta property="og:description" content="Restaurante de parrilla en Puerto Varas con cortes premium, asador patagónico y vinos de alta gama, frente al Lago Llanquihue.">
-  <!-- 🔥 OG Image Principal -->
+  <meta property="og:title" content="El Puesto Restaurant | Carne a la parrilla & Asador patagónico en Puerto Varas">
+  <meta property="og:description" content="Restaurante de parrilla en Puerto Varas frente al Lago Llanquihue. Cortes premium a la parrilla, asador patagónico para cordero y costillas ventana, y vinos de alta gama. Costanera: Av. Vicente Pérez Rosales 1137. Reservas: +56 65 285 6428.">
   <meta property="og:image" content="https://elpuestorestaurant.cl/assets/images/og-fuego.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image" content="https://elpuestorestaurant.cl/assets/images/og-montanas.jpg">
   <meta property="og:url" content="https://elpuestorestaurant.cl/">
   <meta property="og:site_name" content="El Puesto Restaurant Puerto Varas">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="El Puesto Restaurant | Puerto Varas">
-  <meta name="twitter:description" content="Restaurante de parrilla en Puerto Varas con cortes premium, cordero patagónico y vinos de alta gama frente al Lago Llanquihue.">
-  <!-- 🔥 Twitter Card -->
+  <meta name="twitter:title" content="El Puesto Restaurant | Carne a la parrilla en Puerto Varas">
+  <meta name="twitter:description" content="Parrilla y asador patagónico frente al Lago Llanquihue. Cortes premium, cordero y costillas ventana, y vinos de alta gama. Av. Vicente Pérez Rosales 1137. Reservas: +56 65 285 6428.">
   <meta name="twitter:image" content="https://elpuestorestaurant.cl/assets/images/og-fuego.jpg">
 
   <!-- Performance -->
   <link rel="preload" as="image" href="/assets/images/hero.jpg">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/assets/css/mystyles.css?v=4">
+  <link rel="stylesheet" href="/assets/css/mystyles.css?v=5">
 
-  <!-- JSON-LD Restaurant (solo HOME) -->
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://elpuestorestaurant.cl/#website",
+      "url": "https://elpuestorestaurant.cl/",
+      "name": "El Puesto Restaurant"
+    }
+    </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://hogga.cl/#organization",
+      "name": "Hogga",
+      "url": "https://hogga.cl/",
+      "logo": "https://hogga.cl/images/logo.png"
+    }
+    </script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -49,6 +65,8 @@
       "@id": "https://elpuestorestaurant.cl/#restaurant",
       "name": "El Puesto Restaurant",
       "url": "https://elpuestorestaurant.cl/",
+      "isPartOf": { "@id": "https://elpuestorestaurant.cl/#website" },
+      "creator": { "@id": "https://hogga.cl/#organization" },
       "image": [
         "https://elpuestorestaurant.cl/assets/images/hero.jpg",
         "https://elpuestorestaurant.cl/assets/images/logo.png",
@@ -152,7 +170,7 @@
       ]
     }
     </script>
-    
+
 
 </head>
 <body id="top">
@@ -442,7 +460,13 @@
       </a>
     </div>
 
-    <p class="footer-copy">© <span id="y"></span> El Puesto Restaurant</p>
+    <p class="footer-copy">
+      © <span id="y"></span> El Puesto Restaurant<br>
+      <span class="footer-dev">
+        Sitio web desarrollado por
+        <a href="https://hogga.cl" target="_blank" rel="noopener">Hogga</a>
+      </span>
+    </p>
   </footer>
 
   <script src="/assets/js/mymain.js?v=3"></script>
