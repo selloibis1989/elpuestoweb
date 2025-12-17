@@ -1021,6 +1021,23 @@ body.nav-open .nav-panel li:nth-child(5){ transition-delay:.44s; }
     margin-top: 10px; /* antes 12px */
   }
   
+
+  .footer-dev{
+    font-size:.75rem;
+    opacity:.55;
+    margin-top:.35rem;
+    display:inline-block;
+  }
+  
+  .footer-dev a{
+    color:inherit;
+    text-decoration:none;
+  }
+  
+  .footer-dev a:hover{
+    text-decoration:underline;
+    opacity:.85;
+  }
   
   /* ================================
    HERO SUBPÁGINAS (CONTACTO, ETC.)
